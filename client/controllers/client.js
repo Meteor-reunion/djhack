@@ -46,14 +46,3 @@ Template.song.events({
 		});
 	}
 });
-
-Template.song.gestures({
-  'swipeleft .song.swipable': function(e) {
-    e.preventDefault();
-    $(this.find(".song")).addClass("swiped");
-  },
-  'swiperight .song.swipable': function(e) {
-    e.preventDefault();
-    $(this.find(".song")).removeClass("swiped");
-  }
-});

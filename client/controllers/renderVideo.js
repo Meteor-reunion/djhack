@@ -26,7 +26,7 @@ Template.server.onRendered(function() {
   this.autorun(updateTimer);
 
   $('#qr-code').qrcode({
-    text: "http://dj2.meteor.com/#/" + Session.get('partyId')
+    text: "http://djstartup.meteor.com/#/" + Session.get('partyId')
   });
 });
 

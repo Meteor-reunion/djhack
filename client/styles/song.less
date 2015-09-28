@@ -7,12 +7,6 @@
   position: absolute;
   bottom: 10px;
   right: 10px;
-  .transition;
-  fill: currentColor;
-  .animation(hue 60s infinite linear);
-  svg {
-    width: 50%;
-  }
 }
 .songs-list {
   margin: 0;
@@ -26,10 +20,7 @@
     background: #FFF;
     color: @darkDarkgray;
     margin-bottom: 0.5em;
-    .shadow;
-    font-size: 0.75em;
-    .transition;
-    .transform(none);
+
 
     img {
       -webkit-filter: none;
@@ -43,8 +34,41 @@
       width: 100%;
       height: 44px;
       p {
+        font-size: 9px;
         margin: 0;
         padding-left: 10px;
+        float:right;
+        overflow:hidden;
+      
+      }
+      .songVotes{
+        width:88px;
+        height:44px;
+        display: block;
+        float: left;
+
+        .upvoted {
+          display: block;
+          height: 44px;
+          width: 44px;
+          z-index: 10;
+          background: @success-color;
+          float: left;
+          padding: 10px;
+        }
+        .downvoted {
+          display: block;
+          height: 44px;
+          width: 44px;
+          z-index: 10;
+          background: @success-color;
+          float:right;
+          padding: 10px;
+        }
+
+        .downvoted {
+          background: @error-color;
+        }
       }
     }
 
@@ -53,34 +77,6 @@
       position: relative;
     }
 
-    .upvoted, & .downvoted {
-      display: block;
-      position: relative;
-      height: 44px;
-      width: 44px;
-      z-index: 10;
-      background: @success-color;
-      .animation(none);
-      .translate(0, -51px);
-      fill: @inverse-color;
-      float:right;
-    }
 
-    svg {
-      width: 30px;
-      margin: 7px;
-    }
-
-    .downvoted {
-      background: @error-color;
-    }
-
-    &.swiped {
-      .translate(-88px, 0);
-
-      .upvoted, & .downvoted {
-        .translate(133px, -51px);
-      }
-    }
   }
 }

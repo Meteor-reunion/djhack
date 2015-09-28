@@ -1,16 +1,16 @@
 <template name="addSong">
   <div class="wrapper">
     <div class="back"></div>
-  	<h1 class="add-song-title">Add Song</h1>
+  	<h1 class="add-song-title">{{_ "Add Song"}}</h1>
   	<form id="addSong" class="form">
-  		<input type="text" id="query" placeholder="Search..." />
+  		<input type="text" id="query" placeholder="{{_ "Search"}}..." />
   	</form>
     <div id="searchContainer">
         <ul class="songs-list">
             {{#each youtubeSongs}}
                 {{> youtubeSong}}
             {{else}}
-                <li class="song"><div class="container"><p>No results found !</p></div></li>
+                <li class="song"><div class="container"><p>{{_ "No results found !"}}"</p></div></li>
             {{/each }}
         </ul>
     </div>

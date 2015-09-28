@@ -19,7 +19,7 @@ var apiCall = function() {
         part: 'snippet',
         type: 'video',
         fields: 'items(id,snippet)',
-        key: 'AIzaSyBt0EpIzbUteYvSET-nkDBX2fJgpC6xRfY'
+        key: 'AIzaSyA3a9eYs5e6_Td1CT-ohQA6nCEBE2KhSds'
       });
 
       request.execute(function(response) {

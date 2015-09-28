@@ -2,7 +2,7 @@
   <h1>{{name}}</h1>
 
 
-{{> YTPlayer name="player"}}  
+{{> YTPlayer name="player"}}
   {{#if currentSong}}
   <div class="songs-list">
     <div class="song">
@@ -16,20 +16,20 @@
 
     <div id="play">
       {{#if play}}
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="5.0 -10.0 100.0 135.0"><rect x="14" y="13.999" width="27" height="72" /><rect x="59" y="13.999" width="27" height="72" /></svg>
+<i class="fa fa-stop"></i> {{_ "Stop"}} 
       {{else}}
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="5.0 -10.0 100.0 135.0"><polygon points="14.019,14.02 85.981,50.004 14.019,85.98  " /></svg>
+<i class="fa fa-play"></i> {{_ "Play"}}
       {{/if}}
     </div>
 
     <div id="forward">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="5.0 -10.0 100.0 135.0"><polygon points="69.51,35.064 43.643,20.134 43.643,42.658 30.49,35.064 4.633,20.134 4.633,49.999 4.633,79.865   30.49,64.928 43.643,57.342 43.643,79.865 69.51,64.928 95.366,49.999 " /></svg>
+<i class="fa fa-forward"></i>
     </div>
     <div class="clearfix"></div>
   </div>
 
   <div id="qr-code"></div>
-  <div class="reset"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M24.751 16c-.009 4.832-3.918 8.742-8.75 8.75-2.515 0-4.768-1.062-6.365-2.762l2.068-1.443-7.901-3.703.744 8.695 2.193-1.529c2.244 2.594 5.562 4.242 9.26 4.242 6.768 0 12.249-5.482 12.249-12.25h-3.498zm-8.75-8.749c2.517 0 4.769 1.065 6.367 2.764l-2.068 1.443 7.901 3.701-.746-8.693-2.191 1.529c-2.246-2.594-5.562-4.245-9.263-4.245-6.765.001-12.249 5.485-12.25 12.25h3.501c.008-4.831 3.918-8.741 8.749-8.749z"/></svg><span>Reset the songs of this party</span></div>
+  <div class="reset"><span>{{_ "Reset the songs of this party"}}</span></div>
   <!--//2 buttons (play + pause)
   //Slider sound
   //Slider track fast-forward and rewind
