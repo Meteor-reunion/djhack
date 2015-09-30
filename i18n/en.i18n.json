@@ -2,8 +2,8 @@
 "Welcome to DJ Hack":"Welcome to DJ Hack",
 "Create a party":"Create a party",
 "Or join an existing one":"Or join an existing one",
-"Plug your device to a sound system. Create a Party":"Plug your device to a sound system. Create a Party",
-"Everyone flash the QR code of the party, add, upvote songs.":"Everyone flash the QR code of the party, add, upvote songs.",
+"Plug your device to a sound system Create a Party":"Plug your device to a sound system. Create a Party",
+"Everyone flash the QR code of the party add upvote songs":"Everyone flash the QR code of the party, add, upvote songs.",
 "Listen to the music":"Listen to the music",
 "Reset the songs of this party":"Reset the songs of this party",
 "There is no songs yet ! Add one !":"There is no songs yet ! Add one !",
@@ -13,5 +13,6 @@
 "Go":"Go",
 "Add Song":"Add Song",
 "Search":"Search",
-"No results found !":"No results found !"
+"No results found !":"No results found !",
+"QR code scanner":"QR code scanner"
 }

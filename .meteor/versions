@@ -15,6 +15,7 @@ cfs:http-methods@0.0.30
 check@1.0.6
 chriswessels:hammer@4.0.2
 coffeescript@1.0.9
+crosswalk@1.2.0
 ddp@1.2.2
 ddp-client@1.2.1
 ddp-common@1.2.1
@@ -29,7 +30,6 @@ flemay:less-autoprefixer@1.1.0
 fortawesome:fontawesome@4.4.0
 geojson-utils@1.0.4
 hot-code-push@1.0.0
-hpx7:youtube-iframe-player@0.4.15
 html-tools@1.0.5
 htmljs@1.0.5
 http@1.1.1
@@ -74,3 +74,4 @@ underscore@1.0.4
 url@1.0.5
 webapp@1.2.2
 webapp-hashing@1.0.5
+xkmo:youtube-iframe-player@0.4.17

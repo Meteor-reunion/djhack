@@ -15,6 +15,19 @@ Meteor.methods({
 			throw up;
 		}
 	},
+	joinPartyId: function(partyId) {
+		check(partyId, String);
+		var party = Parties.findOne({
+			_id:partyId
+		});
+
+		if (party) {
+			return party._id;
+		} else {
+			var up = new Meteor.Error("joinPartyError", "No party found");
+			throw up;
+		}
+	},
 	createParty: function(partyName, partyPassword) {
 		check(partyName, String);
 		check(partyPassword, String);

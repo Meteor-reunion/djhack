@@ -29,41 +29,42 @@
       height: 44px;
     }
     .container {
-      display: table-cell;
+
       vertical-align: middle;
       width: 100%;
       height: 44px;
       p {
+width:auto;
         font-size: 9px;
         margin: 0;
         padding-left: 10px;
-        float:right;
         overflow:hidden;
-      
+       text-overflow: ellipsis;
+	white-space: nowrap;
       }
       .songVotes{
-        width:88px;
+        width:60px;
         height:44px;
         display: block;
-        float: left;
+        float: right;
 
         .upvoted {
           display: block;
           height: 44px;
-          width: 44px;
+          width: 30px;
           z-index: 10;
           background: @success-color;
           float: left;
-          padding: 10px;
+          padding: 5px;
         }
         .downvoted {
           display: block;
           height: 44px;
-          width: 44px;
+          width: 30px;
           z-index: 10;
           background: @success-color;
           float:right;
-          padding: 10px;
+          padding: 5px;
         }
 
         .downvoted {

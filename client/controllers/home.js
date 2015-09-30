@@ -23,5 +23,25 @@ Template.home.events({
 				Session.set("partyId", result);
 			}
 		});
-	}
+	},
+  'click .scanner' : function(e, t){
+		e.preventDefault();
+		if(Meteor.isCordova){
+        cordova.plugins.barcodeScanner.scan(
+            function (result) {
+            	if(result.cancelled==false && result.text && result.format=='QR_CODE'){
+            				Session.set("page", "client");
+            				Session.set("partyId", result.text);
+            		}else{
+                    return ;
+            			}
+            },
+            function (error) {
+                alert("Scanning failed: " + error);
+                	return ;
+            }
+        );
+        }
+        	return ;
+}
 });

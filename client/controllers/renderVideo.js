@@ -6,7 +6,7 @@ Template.server.onRendered(function() {
   $(document).ready(function() {
     var a = document.createElement('script');
     a.id = 'www-widgetapi-script';
-    a.src = 'https://s.ytimg.com/yts/jsbin/www-widgetapi-vfldTtH0_/www-widgetapi.js';
+    a.src = '//s.ytimg.com/yts/jsbin/www-widgetapi-vfldTtH0_/www-widgetapi.js';
     $("head").append(a);
   });
 
@@ -26,7 +26,7 @@ Template.server.onRendered(function() {
   this.autorun(updateTimer);
 
   $('#qr-code').qrcode({
-    text: "http://djstartup.meteor.com/#/" + Session.get('partyId')
+    text: Session.get('partyId')
   });
 });
 

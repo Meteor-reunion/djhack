@@ -6,7 +6,6 @@
 
 reactive-var
 chriswessels:hammer
-hpx7:youtube-iframe-player
 mrt:qr-scanner
 steeve:jquery-qrcode
 flemay:less-autoprefixer
@@ -26,3 +25,5 @@ random
 ejson
 spacebars
 check
+crosswalk
+xkmo:youtube-iframe-player

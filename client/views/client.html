@@ -14,11 +14,12 @@
 <template name="song">
 	<li class="song">
       <img src="{{thumbnail}}" />
-      <div class="container"><p>{{title}}</p>
+      <div class="container">
         <div class="songVotes">
           <a href="#" class="upvoted" id="{{_id}}"><i class="fa fa-thumbs-o-up"></i></a>
         <a href="#" class="downvoted" id="{{_id}}"><i class="fa fa-thumbs-o-down"></i></a>
       </div>
+<p>{{title}}</p>
 </div>
       <div class="votes" style="width:{{width}}%;left:{{left}}%;background-color:{{color}}"></div>
 	</li>
