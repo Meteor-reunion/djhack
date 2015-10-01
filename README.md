@@ -1,3 +1,11 @@
+Fork
+=================
+* update meteor 1.2
+* mobile app
+* scanner qr code cordova
+* i18n
+
+
 DJ 2.0
 =================
 #### An open source, multi-platform, and collaborative service to create playlists and play music with your friends
